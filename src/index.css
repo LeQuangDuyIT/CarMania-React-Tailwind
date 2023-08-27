@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ct-container {
+  @apply max-w-screen-xl w-full mx-auto;
+}
+
+.ct-button {
+  @apply py-1 cursor-pointer;
+}
+
+.ct-top-site-gradient {
+  @apply bg-gradient-to-br from-[#F1F3FC] to-[#F7F7FB];
+}
+
+.ct-teal-gardient {
+  @apply bg-gradient-to-b from-[#09FFF1] from-5% to-[#20BFB6];
+}
