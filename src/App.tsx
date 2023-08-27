@@ -4,6 +4,7 @@ import Hero from './layouts/Hero';
 import RentalBar from './layouts/RentalBar';
 import CarBrand from './layouts/CarBrand';
 import HowWork from './layouts/HowWork';
+import WhyChoose from './layouts/WhyChoose';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <div className="mt-[43px] py-16">
         <CarBrand />
         <HowWork />
+        <WhyChoose />
       </div>
     </PageLayout>
   );

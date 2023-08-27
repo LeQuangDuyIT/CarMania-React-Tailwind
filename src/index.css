@@ -17,3 +17,11 @@
 .ct-teal-gardient {
   @apply bg-gradient-to-b from-[#09FFF1] from-5% to-[#20BFB6];
 }
+
+.ct-section-title-sub {
+  @apply text-[32px] font-bold leading-tight mt-4;
+}
+
+.ct-why-choose-gradient {
+  @apply bg-gradient-to-tl from-gray-100 to-transparent;
+}

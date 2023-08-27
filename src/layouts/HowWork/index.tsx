@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import classNames from 'classnames';
-import { pickLocationSVG, pickCarSVG } from '../../utils/svg';
+import { howWorkSVG } from '../../utils/svg';
 import pickUpDateSVG from '../../assets/symbols/pick-up-date.png';
 
 const threeStepsToRent = [
   {
-    symbol: pickLocationSVG,
+    symbol: howWorkSVG.pickLocation,
     title: 'Pick Your location',
     sub: 'Choose your location and find your best car.',
     hasBackground: false
@@ -17,7 +17,7 @@ const threeStepsToRent = [
     hasBackground: true
   },
   {
-    symbol: pickCarSVG,
+    symbol: howWorkSVG.bookCar,
     title: 'Book your Desired Car',
     sub: 'We will deliver it directly to you.',
     hasBackground: false
@@ -26,10 +26,10 @@ const threeStepsToRent = [
 
 const HowWork = () => {
   return (
-    <section className="ct-container mt-28 px-[7.5%]">
+    <section className="ct-container mt-28 px-[5.5%]">
       <div className="mb-8 text-center">
         <h4 className="text-gray-400">HOW IT WORK</h4>
-        <h2 className="text-[32px] font-bold">
+        <h2 className="ct-section-title-sub">
           Rent your desired car with following 3 working steps
         </h2>
       </div>
