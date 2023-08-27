@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import classNames from 'classnames';
 import { howWorkSVG } from '../../utils/svg';
 import pickUpDateSVG from '../../assets/symbols/pick-up-date.png';
+import { SECTION_ID } from '../../utils/constants';
 
 const threeStepsToRent = [
   {
@@ -26,7 +27,7 @@ const threeStepsToRent = [
 
 const HowWork = () => {
   return (
-    <section className="ct-container mt-28 px-[5.5%]">
+    <section id={SECTION_ID.HOW_WORK} className="ct-container mt-28 px-[5.5%]">
       <div className="mb-8 text-center">
         <h4 className="text-gray-400">HOW IT WORK</h4>
         <h2 className="ct-section-title-sub">

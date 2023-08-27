@@ -18,7 +18,7 @@ const Header = () => {
         <ul className="flex gap-8 mr-8">
           {navList.map(item => (
             <li key={item.id} className="ct-button">
-              {item.title}
+              <a href={`#${item.id}`}>{item.title}</a>
             </li>
           ))}
         </ul>

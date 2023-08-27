@@ -23,11 +23,11 @@ const reasonToChoose = [
     title: '24/7 Support',
     sub: 'Contact us if you have any issues'
   }
-];
+] as const;
 
 const WhyChoose = () => {
   return (
-    <section className="ct-why-choose-gradient mt-24 py-28">
+    <section className="ct-section-bg-gradient mt-24 py-28">
       <div className="ct-container px-[5.5%] flex justify-between gap-20 ">
         <div className="relative basis-1/2 bg-why-choose-city-map bg-contain bg-no-repeat bg-right-bottom">
           <img

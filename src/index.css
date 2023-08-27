@@ -22,6 +22,6 @@
   @apply text-[32px] font-bold leading-tight mt-4;
 }
 
-.ct-why-choose-gradient {
+.ct-section-bg-gradient {
   @apply bg-gradient-to-tl from-gray-100 to-transparent;
 }

@@ -5,6 +5,7 @@ import RentalBar from './layouts/RentalBar';
 import CarBrand from './layouts/CarBrand';
 import HowWork from './layouts/HowWork';
 import WhyChoose from './layouts/WhyChoose';
+import CarRentalDeals from './layouts/CarRentalDeals';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <CarBrand />
         <HowWork />
         <WhyChoose />
+        <CarRentalDeals />
       </div>
     </PageLayout>
   );
