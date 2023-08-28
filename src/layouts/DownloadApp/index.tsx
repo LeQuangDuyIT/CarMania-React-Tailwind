@@ -1,4 +1,3 @@
-import React from 'react';
 import AppStoreDownload from '../../assets/download-app/AppStore.png';
 import GooglePlayDownload from '../../assets/download-app/GooglePlay.png';
 import MockupApp01 from '../../assets/mockups/mockup-app-01.png';

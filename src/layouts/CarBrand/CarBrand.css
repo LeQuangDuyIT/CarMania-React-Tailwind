@@ -1,16 +1,22 @@
-.ct-slider {
-  background: white;
+:root {
+  --slide-width: 160px;
+  --slide-speed: 30s;
+}
 
+.ct-slider {
   overflow: hidden;
   position: relative;
 }
 .ct-slider::before,
 .ct-slider::after {
   content: '';
+
   height: 100%;
-  position: absolute;
   width: 200px;
+
+  position: absolute;
   z-index: 2;
+
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -27,16 +33,17 @@
 
 .ct-slider .ct-slide-track {
   display: flex;
-  width: calc(160px * 16);
+
+  width: calc(var(--slide-width) * 16);
 }
 
 .ct-slider .ct-slide-track .ct-slide {
   display: flex;
   align-items: center;
 
-  height: 100px;
-  width: 160px;
-  animation: scroll 30s linear infinite;
+  width: var(--slide-width);
+
+  animation: scroll var(--slide-speed) linear infinite;
 }
 
 @keyframes scroll {
@@ -44,6 +51,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-160px * 8));
+    transform: translateX(calc(var(--slide-width) * -8));
   }
 }
