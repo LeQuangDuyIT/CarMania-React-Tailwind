@@ -8,7 +8,6 @@ interface PropsType {
 
 const PeopleSaid: React.FC<PropsType> = ({ data }) => {
   const { _id, photo, name, content } = data;
-
   const [ativedAnimation, setActivedAnimation] = useState<boolean>(true);
 
   useEffect(() => {
@@ -38,6 +37,7 @@ const PeopleSaid: React.FC<PropsType> = ({ data }) => {
         <div className="absolute bottom-0 left-0 flex gap-1">
           {peopleSaidData.map(people => (
             <span
+              key={people._id}
               className={`${people._id === _id ? 'bg-teal' : 'bg-gray-300'} block w-10 h-1`}
             ></span>
           ))}

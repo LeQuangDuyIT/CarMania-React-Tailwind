@@ -1,0 +1,49 @@
+.ct-slider {
+  background: white;
+
+  overflow: hidden;
+  position: relative;
+}
+.ct-slider::before,
+.ct-slider::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.ct-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.ct-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.ct-slider .ct-slide-track {
+  display: flex;
+  width: calc(160px * 16);
+}
+
+.ct-slider .ct-slide-track .ct-slide {
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+  width: 160px;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-160px * 8));
+  }
+}
