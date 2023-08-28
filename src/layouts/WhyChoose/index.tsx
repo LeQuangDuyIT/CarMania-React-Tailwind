@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import HyundaiOrangeCar from '../../assets/cars/Hyundai-Orange-WhyChoose.png';
 import { whyChooseSVG } from '../../utils/svg';
+import { SECTION_ID } from '../../utils/constants';
 
 const reasonToChoose = [
   {
@@ -16,7 +17,7 @@ const reasonToChoose = [
   {
     symbol: whyChooseSVG.sameDay,
     title: 'Same Day Delivery',
-    sub: 'Book and we will deliver it directly to you within 24 Hours'
+    sub: 'We will deliver it directly to you within 24 Hours'
   },
   {
     symbol: whyChooseSVG.support,
@@ -27,7 +28,7 @@ const reasonToChoose = [
 
 const WhyChoose = () => {
   return (
-    <section className="ct-section-bg-gradient mt-24 py-28">
+    <section id={SECTION_ID.WHY_CHOOSE} className="ct-section-bg-gradient mt-24 py-28">
       <div className="ct-container px-[5.5%] flex justify-between gap-20 ">
         <div className="relative basis-1/2 bg-why-choose-city-map bg-contain bg-no-repeat bg-right-bottom">
           <img

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply scroll-smooth;
+}
+
 .ct-container {
   @apply max-w-screen-xl w-full mx-auto;
 }
@@ -15,7 +19,11 @@
 }
 
 .ct-teal-gardient {
-  @apply bg-gradient-to-b from-[#09FFF1] from-5% to-[#20BFB6];
+  background: radial-gradient(115.89% 115.89% at 49.61% 115.89%, #20bfb6 0%, #09fff1 100%);
+}
+
+.ct-teal-gardient-2 {
+  background: radial-gradient(994.87% 73.36% at 73.36% 50.16%, #20bfb6 0%, #00f9eb 100%);
 }
 
 .ct-section-title-sub {
@@ -24,4 +32,8 @@
 
 .ct-section-bg-gradient {
   @apply bg-gradient-to-tl from-gray-100 to-transparent;
+}
+
+.ct-absolute-translate-center {
+  @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
 }

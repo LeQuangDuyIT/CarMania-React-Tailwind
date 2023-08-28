@@ -1,10 +1,11 @@
 import { ArrowLongRightIcon } from '@heroicons/react/24/solid';
 import CarRentalDealItem from '../../components/CarRentalDealItem';
 import carRentalData from '../../utils/car-rental-data';
+import { SECTION_ID } from '../../utils/constants';
 
 const CarRentalDeals = () => {
   return (
-    <section className="ct-container mt-36 text-center">
+    <section id={SECTION_ID.WHICH_RENT} className="ct-container mt-36 text-center">
       <div className="mb-[54px]">
         <h4 className="text-gray-400">POPULAR RENTAL DEALS</h4>
         <h2 className="ct-section-title-sub">Most popular cars rental deals</h2>
