@@ -1,13 +1,13 @@
 import { StarIcon, ArrowLongRightIcon } from '@heroicons/react/24/solid';
 
-import { CarRentalDataObj } from '../../utils/car-rental-data';
+import { CarRentalDataType } from '../../utils/car-rental-data';
 import PersonIcon from '../../assets/symbols/person-icon.png';
 import GearLeverIcon from '../../assets/symbols/gear-lever-icon.png';
 import AirIcon from '../../assets/symbols/air-icon.png';
 import CarDoorIcon from '../../assets/symbols/car-door-icon.png';
 
 interface PropsType {
-  data: CarRentalDataObj;
+  data: CarRentalDataType;
 }
 
 const CarRentalDealItem: React.FC<PropsType> = ({ data }) => {

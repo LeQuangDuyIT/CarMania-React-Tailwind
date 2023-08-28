@@ -3,7 +3,7 @@ import tata_0002 from '../assets/cars-to-rental/tata-zest-xe-petrol.png';
 import suzuki_0003 from '../assets/cars-to-rental/suzuki-grand-vitara-t.png';
 import hyundai_0004 from '../assets/cars-to-rental/hyundai-creta-2019-20-orange.png';
 
-export interface CarRentalDataObj {
+export interface CarRentalDataType {
   _id: string;
   carName: string;
   carImage: string;

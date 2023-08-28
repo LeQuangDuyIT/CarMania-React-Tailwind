@@ -37,3 +37,18 @@
 .ct-absolute-translate-center {
   @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
 }
+
+.ct-animation-slide-in-from-right {
+  animation: slideInFromRight 0.7s ease-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
